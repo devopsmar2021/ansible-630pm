@@ -1,0 +1,8 @@
+---
+- name: Install webserver
+  hosts: web
+  become: yes
+  become_method: sudo
+  roles:
+    - apache
+    - scm

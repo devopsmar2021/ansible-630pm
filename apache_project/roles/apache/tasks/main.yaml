@@ -1,0 +1,17 @@
+---
+- name: install apache
+  yum:
+    name: httpd
+    state: present
+- name: copy index.html on default docroot of apche
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: "0644"
+- name: start and enable httpd services
+  service:
+    name: httpd
+    state: started
+    enabled: yes
