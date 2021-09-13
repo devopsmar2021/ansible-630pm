@@ -1,0 +1,13 @@
+
+install_pkg: [ 'java-1.8.0-openjdk', 'java-1.8.0-openjdk-devel', 'git' ]
+user_name: app
+group_name: app
+user_home: /opt/app
+tomcat_version: "8.5.70"
+tomcat_url: "https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v{{ tomcat_version }}/bin/apache-tomcat-{{ tomcat_version }}.tar.gz"
+app_admin: admin
+app_adminpass: devops123
+app_anudeep: anudeep
+app_anudeeppass: devops123
+app_ravi: ravi
+app_ravipass: devops123

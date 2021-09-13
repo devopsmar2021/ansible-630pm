@@ -45,9 +45,9 @@
   <role rolename="manager-script"/>
   <role rolename="manager-jmx"/>
   <role rolename="manager-status"/>
-  <user username="admin" password="devops123" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
-  <user username="anudeep" password="devops123" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
-  <user username="ravi" password="devops123" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
+  <user username="{{ app_admin }}" password="{{ app_adminpass }}" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
+  <user username="{{ app_anudeep }}" password="{{ app_anudeeppass }}" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
+  <user username="{{ app_ravi }}" password="{{ app_ravipass }}" roles="manager-script,manager-jmx,manager-gui,manager-status"/>
 </tomcat-users>
 
 
